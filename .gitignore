@@ -1,0 +1,4 @@
+# Ignore le deploy local
+fr/_site-fr/
+en/_site-en/
+website/
