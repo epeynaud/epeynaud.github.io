@@ -1,0 +1,63 @@
+---
+title: "Commandes de survie avec git"
+date: 2026-09-04
+categories: [git, outils]
+---
+
+Pour survivre avec les dépôts git.. quand on n'a la mémoire d'un poisson rouge...
+
+## Créer un nouveau dépôt
+
+- Se connecter à la page de Gitlab ou Github
+- Dans le navigateur trouver le menu pour créer un nouveau dépôt
+    a) pour gitlab : dans la page contenant les projets, en haut à droite, bouton "Create project"
+    b) pour github : cliquer sur le menu "Repositories", puis sur le bouton vert "New".
+- Un peut choisir de créer un dépôt vierge ou à partir d'un template ou à partir d'un dépôt existant. 
+
+## Créer un dépôt à partir d'un répertoire existant en local
+
+1. Créer un dépôt Gitlab ou Github **comlètement vide** à partir de l'interface web
+2. Initialiser git dans le repertoire local puis "envoyer" le projet sur le dépôt distant : 
+```
+bash
+---
+cd mon_projet
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin git@github.com:TON_COMPTE/mon_projet.git
+git push -u origin main
+```
+
+## Cloner un dépôt existant 
+
+- Exécuter la commande, avec https
+
+`guit clone https://github.com/USERNAME/your_awesome_project.git`
+
+- ou avec ssh
+
+`guit clone ssh://git@gitlab.cirad.fr:2022/amap/personal/emiliepeynaud/your_awesome_project.git`
+
+- Pour trouver "l'adresse", cliquer sur le bouton "code" en haut à droite sur la page du dépôt visualisée dans le navigateur. 
+
+## "Alimenter" le dépôt : envoie des modifs du dépôt local vers le dépôt distant
+
+- `git status` &rarr; affiche le statut des fichiers présents en local (modifié, non suivis)
+- `git add nom_du_fichier` &rarr; ajoute le fichier à la liste des fichiers à mettre à jour sur le dépôt distant
+- `git commit -m "Awesome message to describe the modification."` &rarr; ajoute un message qui sera visible dans le suivi des versions
+- `git commit push` &rarr; pousse les modifications sur le dépôt distant
+
+## Récupérer la dernière version du dépôt distant vers le dépôt local 
+
+- `git commit pull`  &rarr; récupère le dépôt distant **Astuce : à faire avant de commencer à travailler pour éviter les conflits au moment du push suivant**
+
+## Les branches 
+
+- `git branch`  &rarr; lister les branches 
+- `git branch newbranch`  &rarr; créer la branche "newbranch"
+- `git checkout newbranch`  &rarr; changer de branche pour aller sur la branche "newbranch"
+- `git merge newbranch`  &rarr;  fusionner la branche "newbranch" sur la branche **courante** : se placer sur la branche principale avant de faire le merge
+- `git branch -d newbranch`  &rarr; supprime la branche "newbranch"
+- `git branch --force newbranch 000001` &rarr; positionne la branche "newbrach" sur le commit n°000001

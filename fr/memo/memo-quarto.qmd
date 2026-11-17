@@ -1,0 +1,80 @@
+---
+title: "Comment marche un site Quarto"
+date: 2026-09-03
+categories: [quarto, outils]
+---
+
+## Structure
+
+Un projet site Quarto repose sur `_quarto.yml` (config) et des fichiers `.qmd` (contenu). C'est dans le fichier `_quarto.yml` qu'on définit la structure et le contenu du site web. 
+
+## Contenu des fichiers `.qmd` 
+
+Les fichiers `.qmd` (Quarto Markdown) comporte une entête en YAML
+
+```
+---
+title: "Mon titre"
+author: author
+---
+```
+
+puis le reste du contenu est en Markdown classique. 
+
+
+## Commandes utiles
+
+- `quarto preview` : aperçu local avec rechargement auto
+- `quarto render` : génère le site dans `_site/` &rarr; création des fichiers html, sans aperçu dans le navigateur
+
+On peut exécuter `quarto preview` dans un terminal. Cela va lancer le navigateur pour visualiser la "preview", sur la base des fichiers `.html` générés par Quarto et stockés dans le répertoire `_site/`, dans le cas où aucun répertoire de sortie n'est fourni par l'utilisateur. On peut ensuite éditer les fichiers `_quarto.yml` et `*.qmd` et sauvegarder (`ctrl+s`) pour rafraîchir l'aperçu visible dans le navigateur.  
+
+
+## Un exemple minimal pour commencer 
+
+Dans un répertoire mettre : 
+
+1. Le fichier `_quarto.yml`
+2. Les fichiers `*.qmd` inclus depuis le fichier `_quarto.yml`
+3. Taper `quarto preview` pour voir le site dans un navigateur. 
+
+### Un template minimal pour  `_quarto.yml`
+
+```
+project:
+  type: website
+
+website:
+  back-to-top-navigation: true  # Back to top button at the bottom of the page
+  title: "Test from scratch"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Accueil
+      - href: menu1.qmd
+        text: Menu 1
+
+  page-footer:
+    center: "© 2026 Emilie Peynaud"
+
+format:
+  html:
+    theme: yeti # thème à choisir parmi les thèmes bootstraps prédéfinis 
+                # voir https://bootswatch.com/
+    toc: true
+
+execute:
+  freeze: auto  # re-render only when source changes
+
+```
+
+### Avec le fichier `menu1.qmd`
+
+
+```
+---
+title: "Le menu 1"
+---
+
+Voilà le premier menu. 
+```

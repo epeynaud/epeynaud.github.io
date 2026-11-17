@@ -1,0 +1,12 @@
+---
+title: "Mes fiches mémo"
+listing:
+  contents: .
+  sort: "date desc"
+  type: default
+  categories: true
+  exclude:
+    filename: index.qmd
+---
+
+Dans cette section, je partage mes notes et fiches mémo techniques, au cas où elles puissent servir à d'autres. 

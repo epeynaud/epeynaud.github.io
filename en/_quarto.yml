@@ -1,0 +1,62 @@
+project:
+  type: website
+  output-dir: _site-en
+
+website:
+  back-to-top-navigation: true  # Back to top button at the bottom of the page
+  title: "Emilie Peynaud"
+  navbar:
+    #title: "Emilie"
+    logo-href: "../"
+    left:
+      - href: index.qmd
+        text: 🏠 Home
+      - href: recherche/activites.qmd
+        text: Activities
+      - href: portfolio/index.qmd
+        text: Portfolio
+      - href: cv/cv.qmd
+        text: CV
+      - href: publications/index.qmd
+        text: Publications
+      - href: ./../fr/memo/index.html
+        text: Mémo
+    right:
+      - href: ../fr
+        text: 🇫🇷 Français
+
+
+
+# Chaque sidebar ne s'affiche que sur les pages du dossier correspondant
+  sidebar:
+    - title: "Portfolio"
+      id: portfolio-sb
+      contents:
+        - portfolio/acoustic-aero.qmd
+        - portfolio/femroot.qmd
+        - portfolio/treegrass2d.qmd
+        - portfolio/pydata2pde.qmd
+        - portfolio/pinn-pytorch.qmd
+    - title: "Mémo"
+      contents:
+        - memo/index.qmd
+        - memo/memo-quarto.qmd
+        - memo/memo-git.qmd
+
+  page-footer:
+    center: "© 2026 Emilie Peynaud"
+
+lang: en
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+#    syntax-highlighting: github
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto  # re-render only when source changes
+

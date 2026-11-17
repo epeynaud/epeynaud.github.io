@@ -1,0 +1,38 @@
+---
+#title: "Accueil"
+image: img/2026-09-07-175921.jpg
+toc: false # disable table of contents for this page (if applicable)
+about: 
+  template: solana #broadside
+  image-shape: round
+  image-width: 10em
+  #links: # create buttons
+  #  - icon: linkedin
+  #    text: LinkedIn
+  #    href: https://linkedin.com/in/emilie-peynaud
+  #    target: _blank # opens link in a new browser
+---
+
+## Bonjour, je suis Emilie Peynaud
+
+Bienvenue sur mon site. Ici vous trouverez un aperçu de mes activités de recherche et d'ingénierie en simulations numériques et calcul scientifique pour les sciences du vivants.
+
+Mon activité au Cirad à Montpellier porte essentiellement sur le développement d'outils numériques pour la résolution de problèmes écrits à l'aide d'équations aux dérivées partielles pour des applications en lien avec la représentation de dynamiques végétales pour répondre à des questions d'écologie ou d'agroécologie. 
+
+A l'origine, je me suis formée au calcul scientifique à l'INSA de Toulouse. Durant ma thèse au CERFACS (Toulouse), je me suis intéressée à la simulation de la propagation d'ondes acoustiques dans des fluides en écoulement subsoniques.  
+
+
+## Au menu de ce site 
+
+- 🧭 [Mes activités de recherche](recherche/activites.qmd) pour comprendre mon positionnement entre mathématiques appliquées et sciences du vivant.
+- 🔗 [Mon portfolio](portfolio/index.qmd) pour découvrir mes principaux chantiers numériques, passés ou en cours. 
+- 📄 [Mon CV](cv/cv.qmd) pour connaître mon parcours et mon cursus. 
+- 📖 [Mes Publications](publications/index.qmd) pour retrouver mes travaux de recherche, articles et communications scientifiques.
+- 📝 [Mes fiches mémo](memo/index.qmd) pour retrouver des notes pratiques et solutions techniques issues de mes expériences, que je rassemble ici comme aide-mémoire... et qui pourront peut-être servir à d'autres. 
+
+
+
+## 📬 Contact et liens
+
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/emilie-peynaud) ← pour me contacter
+- 📧 Email : emilie [dot] peynaud [at] cirad [dot] fr ← pour les collaborations scientifiques

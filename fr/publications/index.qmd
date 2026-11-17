@@ -1,0 +1,26 @@
+---
+title: Publications
+---
+
+## Articles publiés dans des revues à comité de lecture
+
+{{< include peer-reviewed-articles.qmd >}}
+
+## Articles publiés dans les revues sans comité de lecture
+
+{{< include non-peer-reviewed-articles.qmd >}}
+
+## Actes de colloques
+
+{{< include proceedings.qmd >}}
+
+## 🎬 Présentation vidéo
+
+Data-driven PDE modelling: Trick or treat! (40 min)
+[https://www.youtube.com/watch?v=SerqycB2Jw0](https://www.youtube.com/watch?v=SerqycB2Jw0)
+
+
+
+## Thèse
+
+{{< include thesis.qmd >}}

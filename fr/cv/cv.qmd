@@ -1,0 +1,34 @@
+
+Emilie Peynaud |
+Ingénieure-chercheuse en mathématiques appliquées et calcul scientifique
+(INSA Toulouse, doctorat 2013 - CERFACS / Airbus / CIRAD)
+
+
+
+## 💼 Parcours
+
+**CIRAD / UMR AMAP, Montpellier** *(2014 - présent)*\
+Chercheuse en modélisation mathématique → projets FemRoot, TreeGrass, pydata2pde
+
+**CIRAD / UMR AMAP, Yaoundé, Cameroun** *(2016 - 2019)*\
+Mission longue. Chercheuse accueillie à l'ENSPY (Ecole Nationale Supérieure Polytechnique de Yaoundé). 
+
+**CERFACS, Toulouse** *(2009 - 2013)*\
+Thèse en mathématiques appliquées → simulation acoustique aéronautique
+
+**EADS Innovation Works (Airbus), Toulouse** *(2009)*\
+Stage ingénieure recherche → propagation acoustique turboréacteur
+
+## 🗞️ Formation
+
+**Diplôme d’ingénieur en Génie Mathématique et Modélisation.** INSA (Institut National des Sciences Appliquées), Toulouse. *(2009)*
+
+**Doctorat en mathématiques appliquées de l’Université de Toulouse délivré par l’INSA de Toulouse.** Simulation numérique de la propagation d’onde acoustique en régime harmonique et couplage avec les phénomènes hydrodynamiques. Encadrants : A.-S. Bonnet Ben-Dhia (CNRS), S. Pernet (Onera)
+
+
+
+## 👩‍🏫 Enseignement & encadrement
+- +200h de cours de niveau master à l'ENSPY (Cameroun) : méthodes numériques pour les EDP, calcul intensif *(2016 - 2019)*
+- Encadrement de 7 stagiaires et 3 ingénieurs (Cameroun, France) sur des thématiques alliant EDP, apprentissage automatique et traitement de données Lidar 
+- Enseignement de la physique et des mathématiques en lycée à l'Institut La salle Saint-Christophe, Masseube *(mise en disponibilité, 2022 - 2023)*
+

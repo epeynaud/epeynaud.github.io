@@ -1,0 +1,42 @@
+---
+#title: "Home"
+image: img/2026-09-07-175921.jpg
+toc: false # disable table of contents for this page (if applicable)
+about: 
+  template: solana #broadside
+  image-shape: round
+  image-width: 10em
+  #links: # create buttons
+  #  - icon: linkedin
+  #    text: LinkedIn
+  #    href: https://linkedin.com/in/emilie-peynaud
+  #    target: _blank # opens link in a new browser
+---
+
+## Hello, I am Emilie Peynaud
+
+Welcome to my website. Here you will find an overview of my research and engineering work in numerical simulation and scientific computing for the life sciences.
+
+My work at CIRAD (French agricultural research centre for international development) in Montpellier focuses mainly on developing numerical tools to 
+solve problems formulated as partial differential equations, with applications to the representation of plant dynamics, in order to address 
+questions in ecology and agroecology.
+
+I originally trained in scientific computing at INSA Toulouse. During my PhD at CERFACS (Toulouse), 
+I worked on simulating the propagation of acoustic waves in fluids with subsonic flow.
+
+
+## What you will find on this site
+
+- 🧭 [My research activities](recherche/activites.qmd) to understand how I position myself between applied mathematics and life sciences.
+- 🔗 [My portfolio](portfolio/index.qmd) to discover my main numerical projects, past and ongoing.
+- 📄 [My CV](cv/cv.qmd) to learn about my background and education.
+- 📖 [My publications](publications/index.qmd) to find my research work, articles and scientific communications.
+- 📝 [Technical notes (in French)](./../fr/memo/index.html): a recently started collection of practical notes and technical solutions from my own experience, kept as a personal reference and shared in case they help others.
+
+
+
+## 📬 Contact and links
+
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/emilie-peynaud) ← to get in touch
+- 📧 Email : emilie [dot] peynaud [at] cirad [dot] fr ← for scientific collaborations
+

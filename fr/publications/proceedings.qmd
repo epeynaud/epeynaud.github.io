@@ -1,0 +1,14 @@
+
+Sellier, D., Mammeri, Y., **Peynaud, E.**, Gomez-Gallego, M., Leuzinger, S., Dumont, Y., Dickson, A. and Williams, N. (2025). A numerical model of coupled phloem-xylem flows for dynamic long-distance transport in trees. *Acta Hortic*. 1419, 113-122, DOI: 10.17660/ActaHortic.2025.1419.15. [https://doi.org/10.17660/ActaHortic.2025.1419.15](https://doi.org/10.17660/ActaHortic.2025.1419.15). 
+
+Vezy R., Treillou S., **Peynaud E.**, Arsouze T., Perez R., Dauzat J. 2023. PlantBiophysics.jl: a Julia package for fast and easy calibration, prototyping and simulation of biophysical models. In : Tsu-Wei Chen (ed.), Andreas Fricke (ed.), Katrin Kahlen (ed.), Susann Müller (ed.), Hartmut Stützel (ed.). Book of abstracts the 10th International Conference on Functional-Structural Plant Models (FSPM2023). Hannover : Institute of Horticultural Production Systems, p. 54-55 International Conference on Functional-Structural Plant Models (FSPM2023). 10, 2023-03-27/2023-03-31, Berlin (Allemagne).
+
+Nzhega A., **Peynaud E.**, Stinckwich S., Melatagia Yonta P., Barczi J.F. 2019. Plant growth modelling using neural networks for cacao agroforestry systems in Cameroon. Nairobi : CIRAD, 1 p. Deep Learning Indaba 2019, 2019-08-26/2019-08-30, Nairobi (Kenya).
+
+**Peynaud E.** 2016. Identification of parameters of the advection-reaction-diffusion equation solved with Discontinuous Galerkin methods: application to plant root growth. Perpignan : Université de Perpignan, 1 p. Emerging Trends in Applied Mathematics and Mechanics Conference (ETAMM 2016), 2016-05-30/2016-06-03, Perpignan (France).
+
+**Peynaud E.**, Fourcaud T., Dumont Y. 2016. Numerical resolution of the C-Root model using Discontinuous Galerkin methods on unstructured meshes: application to the simulation of root system growth. 2016 IEEE International Conference on Functional-Structural Plant Growth Modeling, Simulation, Visualization and Applications (FSPMA). Qingdao : IEEE, p. 158-166 International Conference on Functional-Structural Plant Growth Modeling, Simulation, Visualization and Applications, 2016-11-07/2016-11-11, Qingdao (Chine).
+
+Dumont Y., Fourcaud T., **Peynaud E.** 2014. Modelling root growth with PDE. The C-root model. 9th European Conference on Mathematical and Theoretical Biology (ECMTB 2014), 15-19 June 2014, Gothenburg, Sweden. s.l. : s.n., 2 p. European Conference on Mathematical and Theoretical Biology. 9, 2014-06-15/2014-06-19, Gothenburg (Suède).
+
+Millot F., Pernet S., **Peynaud E.**, Bonnet-Ben Dhia A.S., Mercier J.F. 2012. Galbrun based numerical scheme to compute time-harmonic scattering in an arbitrary mean flow. Reston : American Institute of Aeronautics and Astronautics, 6 p. AIAA/CEAS Aeroacoustics Conference. 17, 2011-06-05/2011-06-08, Portland (Etats-Unis). [https://doi.org/10.2514/6.2011-2796](https://doi.org/10.2514/6.2011-2796). 

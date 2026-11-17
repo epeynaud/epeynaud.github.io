@@ -1,0 +1,24 @@
+---
+title: Publications
+---
+
+## Peer-reviewed journal articles
+
+{{< include peer-reviewed-articles.qmd >}}
+
+## Other journal articles
+
+{{< include non-peer-reviewed-articles.qmd >}}
+
+## Conference proceedings
+
+{{< include proceedings.qmd >}}
+
+## 🎬 Video talk
+
+Data-driven PDE modelling: Trick or treat! (40 min)
+[https://www.youtube.com/watch?v=SerqycB2Jw0](https://www.youtube.com/watch?v=SerqycB2Jw0)
+
+## PhD thesis
+
+{{< include thesis.qmd >}}

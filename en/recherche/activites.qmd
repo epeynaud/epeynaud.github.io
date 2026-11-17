@@ -1,0 +1,75 @@
+---
+title: Mes activités
+---
+
+
+<!--
+Je m'intéresse à la simulation (en premier lieu) et à la modélisation de dynamiques de végétations avec des approches mathématiques continues. La végétation est décrite à l'aide de variables homogènes à des densités (densité de biomasse racinaire, aérienne, densité de surface foliaire,...). Les problèmes à résoudre prennent la forme de systèmes d'équations aux dérivées partielles (EDP) avec les opérateurs usuels de la physique (Laplacien, terme de transport). On retrouve un formalisme similaire par exemple, en mécanique des fluides, en mécanique du solide, dynamique des populations, etc...
+
+### L'approche de modélisation par EDP pour la végétation
+
+Dans le cadre des dynamiques de végétation, la modélisation par EDP représente une alternative originale qui a l'avantage de s'adapter à diverses échelles (individu, parcelle, paysage) pour représenter de manière agrégée l'évolution spatio-temporelle des plantes en réponse aux divers phénomènes biotiques et abiotiques auxquels elles sont soumises. Cette approche de modélisation constitue un outil cognitif et conceptuel permettant de mieux comprendre les dynamiques de la végétation en lien avec les changements globaux et permet aussi de concevoir des outils prédictifs pour la simulation de scénario. 
+
+### Une démarche cyclique pluri-disciplinaire
+
+Cette approche s'inscrit dans une démarche pluridisciplinaire cyclique où il s'agit d'abord d'établir les systèmes d'équation sur la base des connaissances des experts en plantes et des hypothèses à tester. La validité des modèles est ensuite étudiée d'un point de vue mathématique (caractère bien posé, analyse asymptotique). 
+
+[//]: # Une analyse asymptotique permet par exemple de comprendre le comportement en temps long des modèles et de mettre en évidence des seuils de valeurs des paramètres du modèles à partir desquels il y a existence d'équilibres. 
+
+Il s'agit ensuite de résoudre ces modèles pour confronter les simulations numériques à la réalité de terrain. 
+
+### Simulations numériques 
+
+Dans des configurations réalistes, il n'est pas possible d'exhiber des solutions analytiques. Il convient alors de mettre en oeuvre des méthodes numériques adaptées permettant de retrouver les bonnes propriétés des solutions (caractère bornée par exemple). C'est là que j'interviens essentiellement. J'ai développé plusieurs codes basés sur l'usage de méthodes des éléments finis (continus, discontinus ou mixte) pour résoudre des équations de type advection-réaction-diffusion. Plus récemment, je me suis intéressée à l'approche de résolution à l'aide de réseaux de neurones informés par la "physique" (ou PINN pour physics-informed neural networks). 
+
+### Estimation de paramètre
+
+Un des verrous de l'approche de modélisation par EDP appliquée aux dynamiques de végétation concerne la difficulté à mesurer la valeur de certains paramètres car les opérateurs agrègent souvent plusieurs phénomènes complexes imbriqués. En revanche, déterminer sur le terrain des densités de biomasse, de surface foliaire devient relativement accessible avec des outils comme le Lidar ou par imagerie satellite pour les larges échelles. A partir de ces données, il s'agit de déterminer les valeurs des paramètres du modèle. On tombe alors dans la catégorie des problèmes inverses de type estimation de paramètres qui sont souvent mal posés. C'est notamment pour répondre à cette problématique que j'ai travaillé sur le workflow CEDI. A partir de là, des simulations réalistes peuvent être réalisées et les résultats peuvent être comparés aux observations des spécialistes, ce qui permet alors de corriger les modèles et ainsi de suite. 
+
+### Applications 
+
+L'ensemble de mon travail s'appuie sur un socle méthodologique commun en lien avec la résolution numérique d'EDP, essentiellement basé sur l'usage d'éléments finis sur maillages non structuré. Mon activité se décline autour de plusieurs applications aux enjeux variés en lien avec la représentation de dynamiques :
+
+- de racines de plantes en interaction avec leur environnement, à l'échelle de la plante ou de la parcelle. 
+- de biomasse de cacaoyers en systèmes agroforestiers au Cameroun. 
+- de biomasses ligneuses et herbacées dans des savanes humides d'Afrique centrale. 
+
+
+
+----------------------
+-->
+
+**Compétences**
+
+Mon activité s'appuie sur un socle méthodologique en modélisation mathématique et calcul scientifique, appliqué à des problématiques de dynamiques de végétation. Ce socle mobilise quatre grandes familles de compétences, transposables à d'autres domaines impliquant des systèmes dynamiques spatio-temporels complexes.
+
+**Modélisation mathématique de systèmes dynamiques**
+
+Formulation et analyse de systèmes d'équations aux dérivées partielles (opérateurs de diffusion, transport, réaction) pour représenter l'évolution spatio-temporelle de systèmes physiques ou biologiques. Étude du caractère bien posé des modèles et de leur comportement asymptotique. Cette approche, développée ici pour la végétation, est directement transposable à d'autres domaines partageant le même formalisme : mécanique des fluides, mécanique du solide, dynamique des populations, propagation, hydrologie.
+
+**Calcul scientifique et méthodes numériques**
+
+Conception et développement de codes de simulation basés sur les méthodes des éléments finis (continus, discontinus, mixtes) sur maillages non structurés, pour résoudre des équations d'advection-réaction-diffusion en configurations réalistes où aucune solution analytique n'existe. Plus récemment, exploration des réseaux de neurones informés par la physique (PINN) comme approche alternative de résolution.
+
+**Problèmes inverses et assimilation de données**
+
+Estimation de paramètres de modèles à partir de données de terrain hétérogènes et multi-échelles (mesures directes, LiDAR, imagerie satellite), dans un cadre de problèmes inverses souvent mal posés. Conception d'un workflow d'estimation de paramètres (CEDI) permettant de relier systématiquement observations et simulations.
+
+**Conduite de projets scientifiques interdisciplinaires**
+
+Pilotage d'une démarche cyclique associant experts d'un domaine d'application, hypothèses de modélisation, validation mathématique, résolution numérique et confrontation aux données de terrain, avec correction itérative des modèles à partir des écarts observés. Collaboration régulière avec des équipes internationales (Cameroun, Afrique centrale) sur des problématiques agroforestières et de gestion des ressources naturelles.
+
+**Applications**
+
+Ces compétences ont été mobilisées notamment sur des applications à la dynamique racinaire des plantes, à la biomasse de systèmes agroforestiers (cacaoyers, Cameroun) et aux biomasses ligneuses et herbacées de savanes humides d'Afrique centrale voir la page [portfolio](../portfolio/index.qmd) pour le détail de ces travaux.
+
+
+** Compétences** 
+
+- Modélisation et physique numérique : résolution et identification d'EDP, méthodes d'approximation (éléments finis, différences finis), aéroacoustique, écoulement en milieux poreux et complexe
+
+- Physics-Informed AI / Deep learning : modélisation hybride physique/deep learning (PINNs), réseaux de neurones, Pytorch, Tensorflow
+
+- Développement et génie logiciel, conception d'architecture de code : fortran 90, julia python. Maintenance de code en C++. Gestion de version GitLab, GitHub. 
+
+- Calcul haute  performance (HPC) : architecture de calcul intensif, gestionnaire de tâche (slurm), environnement linux, cluster

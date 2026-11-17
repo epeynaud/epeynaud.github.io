@@ -1,0 +1,43 @@
+---
+title: "Portfolio"
+sidebar: portfolio-sb
+---
+
+### 🧭 En quelques mots 
+
+Je conçois et implémente des modèles numériques pour simuler des systèmes
+physiques complexes : des schémas éléments finis rigoureux jusqu'aux approches
+hybrides couplant modèles physiques et réseaux de neurones (PINN).
+
+Mes méthodes sont transversales. Mes applications ont couvert :
+ 
+- la propagation acoustique en écoulement subsonique (aéronautique)
+- la dynamique racinaire des plantes
+- les dynamiques de biomasse en savane africaine
+- la modélisation d'agroforêts à base de cacaoyers (Cameroun)
+
+### 🛠️ Stack technique
+
+| Domaine | Outils |
+|---|---|
+| Langages | Fortran 90, Python, Julia |
+| Librairies ML | TensorFlow, PyTorch |
+| Méthodes numériques | FEM (continus, Galerkin-Discontinu), PINN |
+| Solveurs | MUMPS, Levenberg-Marquardt |
+| Visualisation | ParaView (VTK), Matplotlib |
+| Workflow | Git, Make, LaTeX, Dataverse, Software Heritage |
+
+### 📁 Projets
+
+| Projet | Méthode | Langage | Statut |
+|---|---|---|---|
+| [acoustics-aero](acoustic-aero.qmd) | EF mixtes continus/discontinus | Fortran | ✅ Publié |
+| [femroot](femroot.qmd) | EF Galerkin-Discontinu + Levenberg-Marquardt | Fortran 90 | ✅ Publié |
+| [treegrass2d](treegrass2d.qmd) | EF continus + lumping + positivité | Fortran 90 + Python + Julia | 📝 En cours |
+| [pydata2pde](pydata2pde.qmd) | PINN + workflow CEDI | Python + TensorFlow | ✅ Publié |
+| [pinn-pytorch](pinn-pytorch.qmd) | PINN pédagogique 1D | Python + PyTorch | 🔧 WIP |
+
+
+
+---
+[← Retour à l'accueil](../index.qmd)

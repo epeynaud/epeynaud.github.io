@@ -1,0 +1,13 @@
+**Peynaud, E.**, Melatagia, P., Stinckwich, S., & Barczi, J. F. (2025). A workflow to discover partial differential equations from data: Application to the dynamics of tree biomass. *MethodsX*, 103560. [https://doi.org/10.1016/j.mex.2025.103560](https://doi.org/10.1016/j.mex.2025.103560). 
+
+Ariza-Salamanca, A. J., González-Moreno, P., Vezy, R., **Peynaud, E.**, Palacios-Rodríguez, G., Lara-Gómez, M. Á., ... & Navarro-Cerrillo, R. M. (2025). Quantifying canopy structural traits in agroforestry systems through Terrestrial Laser Scanning: A case study in cocoa-based agroforestry systems. *Computers and Electronics in Agriculture*, 238, 110795. [http://doi.org/10.1016/j.compag.2025.110795s](http://doi.org/10.1016/j.compag.2025.110795s). 
+
+Vezy, R., Treillou, S., Mackeown, S., **Peynaud, E.**, Perez, R. P., Arsouze, T., & Dauzat, J. (2025). PlantBiophysics. jl: a high-performance, modular software for prototyping and scaling biophysical models from leaf to canopy. *in silico Plants*, 7(2), diaf021. [https://doi.org/10.1093/insilicoplants/diaf021]( https://doi.org/10.1093/insilicoplants/diaf021). 
+
+
+**Peynaud E.**, Momo Takoudjou S. Terrestrial LiDAR point cloud dataset of cocoa trees grown in agroforestry systems in Cameroon. *Data in Brief*, 53 (2024). [https://doi.org/10.1016/j.dib.2024.110108](https://doi.org/10.1016/j.dib.2024.110108).
+
+
+**Peynaud E.** 2018. Operator splitting and discontinuous Galerkin methods for advection-reaction-diffusion problem: application to plant root growth. Biomath, 7(2). [https://doi.org/10.11145/j.biomath.2018.12.037](https://doi.org/10.11145/j.biomath.2018.12.037). 
+
+Bonnet-Ben Dhia A.S., Mercier J.F., Millot F., Pernet S., **Peynaud E.** 2012. Time-harmonic acoustic scattering in a complex flow: A full coupling between acoustics and hydrodynamics. *Communications in Computational Physics*, 11 (2) : p. 555-572. [https://doi.org/10.4208/cicp.221209.030111s](https://doi.org/10.4208/cicp.221209.030111s). 
