@@ -10,4 +10,6 @@ To do
 
 - Finir de traduire les page en anglais
 
-- Reprendre la page activité 
+- Reprendre la page activité
+
+- Gérer les .gitignore qui trainent dans fr/ et en/ 
