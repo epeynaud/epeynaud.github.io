@@ -1,6 +1,40 @@
----
-title: Mes activités
----
+
+## Modelling, Numerical Simulation and Physics-Informed AI
+
+I work on modelling complex dynamical systems: writing the equations, solving them numerically, and confronting them with real data. My current field of application is vegetation, but the tools come from computational physics: PDEs, finite elements, inverse problems and, more recently, physics-informed neural networks. These tools apply wherever something diffuses, is transported or reacts in space and time.
+
+**Mathematical modelling**
+
+I contribute to formulating PDE systems (diffusion, transport, reaction) to describe how physical or biological systems evolve, translating domain experts' hypotheses into equations. The mathematical analysis of the models (well-posedness, long-time behaviour) is carried out with mathematician colleagues. I rely on their results to choose and build suitable numerical methods. The formalism is the same as in fluid mechanics, solid mechanics or population dynamics. I have also worked on [aeroacoustics](../portfolio/acoustic-aero.qmd) in the past.
+
+**Numerical simulation and scientific computing**
+
+In realistic settings there is no analytical solution, so I develop simulation codes. I mainly use finite element methods (continuous, discontinuous, mixed) on unstructured meshes, paying particular attention to the properties the solution must preserve (positivity, bounds), which follow from the analysis of the model. My codes are prototypes, most often in 2D, designed to build and validate numerical methods suited to a model before a possible move to heavier configurations. I program in Fortran 90, Julia and Python, and I maintain C++ code. I also use computing clusters to run simulation campaigns in parallel.
+
+**AI and hybrid models**
+
+I am interested in PINNs (physics-informed neural networks) as an alternative to classical solution methods, which I explore in the [pinn-pytorch](../portfolio/pinn-pytorch.qmd) project. They make it possible to take advantage of deep learning libraries (PyTorch, TensorFlow), in particular automatic differentiation, but they do not remove the need to understand the mathematical properties of the equations being solved. In my view, these approaches can speed up repetitive computations, for example when many parameter values have to be tested, and make it easier to integrate data, notably to feed digital twins.
+
+**Model calibration from data**
+
+Model parameters are often impossible to measure directly, while observations exist (field measurements, LiDAR, satellite imagery). The parameters must therefore be recovered from the data, which is an inverse problem, often ill-posed. Together with computer science and modelling partners, we designed the CEDI workflow, which links observations and simulations using PINNs and aims to identify the differential operators describing tree growth. As LiDAR data at several dates were not available for cacao trees, we tested it on synthetic trees simulated with AmapSim (three contrasting architectures: Massart, Prévost, Rauh). In life sciences, the main difficulty is validation: unlike the classical physics cases found in the literature, the "true" equations are not known. Details are in the [CEDI project](../portfolio/pydata2pde.qmd), with the paper and the code.
+
+**Applications**
+
+These methods have been used to study plant root dynamics ([femroot](../portfolio/femroot.qmd)), cacao biomass in agroforestry systems in Cameroon ([with the CEDI workflow CEDI implemented in pydata2pde](../portfolio/pydata2pde.qmd)), and woody and herbaceous biomass in humid savannas of Central Africa ([treegrass2d](../portfolio/treegrass2d.qmd)). More details are in the [portfolio](../portfolio/index.qmd).
+
+**Teamwork and project work**
+
+My work is interdisciplinary and proceeds in cycles: hypotheses with domain experts, mathematical analysis with mathematicians, simulation, comparison with field data, then model correction. I regularly collaborate with teams in Cameroon and Central Africa on agroforestry and natural resource management.
+
+For example, during my stay in Cameroon, I set up the deep2PDE project, which led to the design of the CEDI workflow: formalising the method in workshops with partners, working with a development engineer and then, after their departure, taking over the code and extending it from 2D to 3D.
+
+**Perspectives**
+
+I am currently preparing two follow-ups. The first concerns free boundary problems, with mathematician colleagues, to model interactions between woody and herbaceous biomass in forest-savanna mosaics, a question of interest to both ecology and scientific computing. We exchange regularly and respond to calls for projects to secure the means to carry out this research. The second extends the [femroot](../portfolio/femroot.qmd) model to root systems in intercropping. This is an axis I have mostly explored on my own so far, and I am looking for agronomist partners to anchor it in field questions.
+
+Details of the tools are in the [technical stack](../portfolio/index.qmd) of the portfolio.
+
 
 
 <!--

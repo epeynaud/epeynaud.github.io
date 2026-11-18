@@ -1,7 +1,50 @@
----
-title: Mes activités
----
 
+## Modélisation, simulation numérique et IA physique
+
+Je travaille sur la modélisation de systèmes dynamiques complexes : écrire les équations, les résoudre numériquement, puis les confronter à des données réelles. Mon terrain d'application aujourd'hui est la végétation, mais les outils sont ceux de la physique numérique : EDP, éléments finis, problèmes inverses, et plus récemment réseaux de neurones informés par la physique. Ces outils servent dans tous les domaines où quelque chose diffuse, est transporté ou réagit dans l'espace et dans le temps.
+
+**Modélisation mathématique**
+
+Je participe à la formulation de systèmes d'EDP (diffusion, transport, réaction) pour décrire l'évolution de systèmes physiques ou biologiques, en traduisant avec des spécialistes du domaine leurs hypothèses en équations. L'analyse mathématique des modèles (caractère bien posé, comportement en temps long) est menée avec des collègues mathématiciens. Je m'appuie sur leurs résultats pour choisir et construire les méthodes numériques adaptées. Le formalisme est le même qu'en mécanique des fluides, en mécanique du solide ou en dynamique des populations. J'ai d'ailleurs aussi travaillé sur l'[aéroacoustique](../portfolio/acoustic-aero.qmd) par le passé.
+
+**Simulation numérique et calcul scientifique**
+
+Dans les cas réalistes, il n'existe pas de solution analytique, donc je développe des codes de simulation. J'utilise surtout les éléments finis (continus, discontinus, mixtes) sur maillages non structurés, avec une attention particulière aux propriétés que la solution doit conserver (positivité, bornes) et qui découlent de l'analyse du modèle. Mes codes sont des prototypes, le plus souvent en 2D d'espace, conçus pour construire et valider des méthodes numériques adaptées à un modèle avant un passage éventuel à des configurations plus lourdes. Je programme en Fortran 90, Julia et Python, et je maintiens du code C++. J'utilise aussi des clusters pour lancer des campagnes de simulations en parallèle.
+
+**IA et modèles hybrides**
+
+Je m'intéresse aux PINN (réseaux de neurones informés par la physique) comme alternative aux méthodes classiques de résolution, ce que j'explore dans le projet [pinn-pytorch](../portfolio/pinn-pytorch.qmd). Ils permettent de tirer parti des bibliothèques de deep learning (PyTorch, TensorFlow), notamment de la différentiation automatique, mais ne dispensent pas de comprendre les propriétés mathématiques des équations résolues. À mon avis, ces approches peuvent accélérer les calculs répétitifs, par exemple quand il faut tester beaucoup de valeurs de paramètres, et faciliter l'intégration de données, notamment pour alimenter des jumeaux numériques.
+
+**Calibration de modèles sur données**
+
+Les paramètres d'un modèle sont souvent impossibles à mesurer directement, alors que des observations existent (mesures de terrain, LiDAR, imagerie satellite). Il faut donc les retrouver à partir des données, ce qui est un problème inverse, souvent mal posé. Avec des partenaires informaticiens et modélisateurs, nous avons conçu le workflow CEDI, qui relie observations et simulations à l'aide de PINN et vise à identifier les opérateurs différentiels qui décrivent la croissance des arbres. Faute de données LiDAR à plusieurs dates sur des cacaoyers, nous l'avons testé sur des arbres synthétiques simulés avec AmapSim (trois architectures contrastées : Massart, Prévost, Rauh). En sciences du vivant, la principale difficulté est la validation : contrairement aux cas de physique classiques de la littérature, on ne connaît pas les « vraies » équations. Le détail est dans le [projet CEDI](../portfolio/pydata2pde.qmd), avec l'article et le code.
+
+
+**Applications**
+
+Ces méthodes ont servi à étudier la dynamique des racines de plantes ([femroot](../portfolio/femroot.qmd)), la biomasse de cacaoyers en systèmes agroforestiers au Cameroun ([avec le workflow CEDI implémenté dans pydata2pde](../portfolio/pydata2pde.qmd)), et les biomasses ligneuses et herbacées de savanes humides d'Afrique centrale ([treegrass2d](../portfolio/treegrass2d.qmd)). Le détail est dans le [portfolio](../portfolio/index.qmd).
+
+**Travail en équipe et en projet**
+
+Mon travail est interdisciplinaire et procède par cycles : hypothèses avec les experts du domaine, analyse mathématique avec des mathématiciens, simulation, comparaison au terrain, puis correction du modèle. Je collabore régulièrement avec des équipes au Cameroun et en Afrique centrale sur des questions d'agroforesterie et de gestion des ressources naturelles.
+
+Par exemple, lors de mon séjour au Cameroun, j'ai monté le projet deep2PDE, qui a permis de concevoir le workflow CEDI : formalisation de la méthode en ateliers avec les partenaires, travail avec un ingénieur de développement, puis, après son départ, reprise du code que j'ai étendu de la 2D à la 3D.
+
+**Perspectives**
+
+Je prépare actuellement deux prolongements. Le premier porte sur les problèmes à frontières libres, avec des collègues mathématiciens et écologues, pour modéliser les interactions entre biomasse ligneuse et herbacée dans les mosaïques forêt-savane, une question qui intéresse à la fois l'écologie et le calcul scientifique. Nous échangeons régulièrement et répondons à des appels à projets pour nous donner les moyens de mener cette recherche. Le second consiste à étendre le modèle [femroot](../portfolio/femroot.qmd) à la modélisation de systèmes racinaires en association de cultures (intercropping). Il s'agit d'un axe que j'ai surtout exploré seule jusqu'ici, et je cherche des partenaires agronomes pour l'ancrer dans des questions de terrain.
+
+Le détail des outils est dans la [stack technique](../portfolio/index.qmd) du portfolio.
+
+<!--
+
+**Outils**
+
+- **Modélisation et physique numérique :** EDP, éléments finis, différences finies, aéroacoustique
+- **IA et physique :** PINN, PyTorch, TensorFlow
+- **Développement :** Fortran 90, Julia, Python, C++ (maintenance), Git (GitLab, GitHub), environnement Linux (Ubuntu)
+- **Calcul sur cluster :** Slurm, campagnes de simulations paramétriques (scripts de soumission)
+-->
 
 <!--
 Je m'intéresse à la simulation (en premier lieu) et à la modélisation de dynamiques de végétations avec des approches mathématiques continues. La végétation est décrite à l'aide de variables homogènes à des densités (densité de biomasse racinaire, aérienne, densité de surface foliaire,...). Les problèmes à résoudre prennent la forme de systèmes d'équations aux dérivées partielles (EDP) avec les opérateurs usuels de la physique (Laplacien, terme de transport). On retrouve un formalisme similaire par exemple, en mécanique des fluides, en mécanique du solide, dynamique des populations, etc...
@@ -39,13 +82,14 @@ L'ensemble de mon travail s'appuie sur un socle méthodologique commun en lien a
 ----------------------
 -->
 
+<!--
 **Compétences**
 
 Mon activité s'appuie sur un socle méthodologique en modélisation mathématique et calcul scientifique, appliqué à des problématiques de dynamiques de végétation. Ce socle mobilise quatre grandes familles de compétences, transposables à d'autres domaines impliquant des systèmes dynamiques spatio-temporels complexes.
 
 **Modélisation mathématique de systèmes dynamiques**
 
-Formulation et analyse de systèmes d'équations aux dérivées partielles (opérateurs de diffusion, transport, réaction) pour représenter l'évolution spatio-temporelle de systèmes physiques ou biologiques. Étude du caractère bien posé des modèles et de leur comportement asymptotique. Cette approche, développée ici pour la végétation, est directement transposable à d'autres domaines partageant le même formalisme : mécanique des fluides, mécanique du solide, dynamique des populations, propagation, hydrologie.
+Formulation et analyse de systèmes d'équations aux dérivées partielles (opérateurs de diffusion, transport, réaction) pour représenter l'évolution spatio-temporelle de systèmes physiques ou biologiques. Cette approche, développée ici pour la végétation, est directement transposable à d'autres domaines partageant le même formalisme : mécanique des fluides, mécanique du solide, dynamique des populations, propagation, hydrologie.
 
 **Calcul scientifique et méthodes numériques**
 
@@ -73,3 +117,4 @@ Ces compétences ont été mobilisées notamment sur des applications à la dyna
 - Développement et génie logiciel, conception d'architecture de code : fortran 90, julia python. Maintenance de code en C++. Gestion de version GitLab, GitHub. 
 
 - Calcul haute  performance (HPC) : architecture de calcul intensif, gestionnaire de tâche (slurm), environnement linux, cluster
+-->

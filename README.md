@@ -4,12 +4,14 @@ My personnal webpages.
 
 To do 
 
-- A corriger : en dark mode, les écriture de script dans les fiches mémo s'affichent en blanc sur blanc. 
+- [ ] A corriger : en dark mode, les écriture de script dans les fiches mémo s'affichent en blanc sur blanc. 
 
-- Déployer le site sur github
+- [ ] Déployer le site sur github
 
-- Finir de traduire les page en anglais
+- [ ] Finir de traduire les page en anglais: dans le portfolio
 
-- Reprendre la page activité
+- [x] Reprendre la page activité
 
-- Gérer les .gitignore qui trainent dans fr/ et en/ 
+- [ ] Gérer les .gitignore qui trainent dans fr/ et en/ 
+
+- [ ] Ajouter CRoot (?)

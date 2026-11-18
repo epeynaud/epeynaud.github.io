@@ -27,7 +27,7 @@ I worked on simulating the propagation of acoustic waves in fluids with subsonic
 
 ## What you will find on this site
 
-- 🧭 [My research activities](recherche/activites.qmd) to understand how I position myself between applied mathematics and life sciences.
+- 🧭 [My activities](recherche/activites.qmd) to understand how I position myself between applied mathematics and life sciences.
 - 🔗 [My portfolio](portfolio/index.qmd) to discover my main numerical projects, past and ongoing.
 - 📄 [My CV](cv/cv.qmd) to learn about my background and education.
 - 📖 [My publications](publications/index.qmd) to find my research work, articles and scientific communications.

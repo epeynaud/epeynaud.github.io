@@ -24,7 +24,7 @@ A l'origine, je me suis formée au calcul scientifique à l'INSA de Toulouse. Du
 
 ## Au menu de ce site 
 
-- 🧭 [Mes activités de recherche](recherche/activites.qmd) pour comprendre mon positionnement entre mathématiques appliquées et sciences du vivant.
+- 🧭 [Mes activités](recherche/activites.qmd) pour comprendre mon positionnement entre mathématiques appliquées et sciences du vivant.
 - 🔗 [Mon portfolio](portfolio/index.qmd) pour découvrir mes principaux chantiers numériques, passés ou en cours. 
 - 📄 [Mon CV](cv/cv.qmd) pour connaître mon parcours et mon cursus. 
 - 📖 [Mes Publications](publications/index.qmd) pour retrouver mes travaux de recherche, articles et communications scientifiques.
