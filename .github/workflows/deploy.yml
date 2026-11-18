@@ -1,0 +1,77 @@
+name: Deploy website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render site-fr
+        working-directory: fr
+        run: quarto render
+
+      - name: Render site-en
+        working-directory: en
+        run: quarto render
+        
+      - name: Prepare website
+        run: |
+          mkdir website
+          cp index.html website/
+          cp style.css website/
+          cp -r en/_site-en website/en
+          cp -r fr/_site-fr website/fr
+
+      - name: Inspect generated files
+        run: |
+          echo "=== SITE FR ==="
+          find website/fr -type f | sort
+
+          echo ""
+          echo "=== SITE EN ==="
+          find website/en -type f | sort
+
+          echo ""
+          echo "=== PUBLIC ==="
+          find website -type f | sort
+
+          echo ""
+          echo "=== index.html ==="
+          cat website/index.html
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: webpage
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
