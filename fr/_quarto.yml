@@ -53,7 +53,7 @@ format:
   html:
     theme:
       light: flatly
-      dark: darkly
+      dark: [darkly, custom.scss]
 #    syntax-highlighting: github
     css: styles.css
     toc: true

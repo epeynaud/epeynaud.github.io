@@ -1,0 +1,19 @@
+/* Correction de l'affichage du code inline dans le mode sombre*/
+
+
+// Couleur du texte du code
+$code-color: #ffb86c;
+
+// Couleur de fond du code
+$code-bg: #343a40;
+
+
+
+
+
+/*-- scss:rules --*/
+/*
+.quarto-dark :not(pre) > code {
+  color: #ffb86c !important;
+  background-color: #343a40 !important;
+}*/
