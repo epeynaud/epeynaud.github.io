@@ -39,6 +39,7 @@ My methods are transferable across domains. My applications have included:
 | [pinn-pytorch](pinn-pytorch.qmd) | 1D educational PINN | Python + PyTorch | 🔧 WIP |
 
 
-
+<!--
 ---
 [← Back to home](../index.qmd)
+-->

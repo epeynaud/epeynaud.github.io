@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: _site-en
 
+from: markdown+emoji
+
 website:
   back-to-top-navigation: true  # Back to top button at the bottom of the page
   title: "Emilie Peynaud"

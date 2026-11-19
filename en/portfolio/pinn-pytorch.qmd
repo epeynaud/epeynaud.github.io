@@ -2,23 +2,21 @@
 title: PINN-PyTorch
 ---
 
-# Notebooks pédagogiques PINN (work in progress)
+# Pedagogical notebooks on PINNs (work in progress)
 
-## Contexte
-Formation personnelle et documentation pédagogique.
-Implémentation pas à pas de PINN en PyTorch, appliqués aux mêmes
-équations que TreeGrass (dynamiques ligneux/herbacés en savane), mais
-en 1D pour la clarté pédagogique.
+## Context
+Personal training and pedagogical documentation. Step by step implementation of PINNs in 
+PyTorch, applied to the same equations as the ones in [TreeGrass2D](treegrass2d.qmd) (woody and herbaceous biomass dynamics in fire prone savanna), but in 1D for clarity.
 
-## Contenu
-- Notebook 1 : calcul de dérivées partielles avec PyTorch (autograd) avec des exemples simples, progression pas à pas
-- Notebook 2 : implémentation PINN 1D sur un système d'EDP représentant les dynamiques de biomasse en savane
+## Content
+- Notebook 1 : computation of the partial derivatives with PyTorch (autograd) on simple examples, step by step progression
+- Notebook 2 : implementation of PINNs in 1D for a system of PDE representing the dynamics of forest-savanna biomass
 
 ## Stack
 Python - PyTorch - Jupyter - Markdown
 
 ## Statut
-🔧 Work in progress : dépôt rendu public à la finalisation.
+🔧 Work in progress : repository to be made public once finished.
 
 ---
-[← Retour au portfolio](index.qmd)
+[← Back to portfolio](index.qmd)

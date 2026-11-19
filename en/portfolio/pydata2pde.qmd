@@ -2,28 +2,27 @@
 title: pydata2pde
 ---
 
-# Découverte d'EDP à partir de données (PINN / workflow CEDI)
+# Discovery of PDE from data (PINN / workflow CEDI)
 
-## Contexte
-Développement autonome au CIRAD dans le cadre du projet Deep2PDE.
-Implémentation d'un workflow complet pour extraire une EDP à partir
-de données représentant des dynamiques temporelles.
+## Context
+Development at CIRAD in the framework of the project Deep2PDE.
+Implementation of a complete workflow for the extraction of PDE from data representing space time variations 
 
 ## Workflow CEDI
-- **C**ollection : données synthétiques de biomasse arborée en 3D
-- **E**xtrapolation : interpolation spatiotemporelle
-- **D**ifferentiation : calcul des dérivées partielles
-- **I**dentification : estimation des paramètres de l'EDP
+- **C**ollection : synthetic data of woody biomass in 3D
+- **E**xtrapolation : spatio-temporal interpolation (surrogate model)
+- **D**ifferentiation : computation of the partial derivatives by automatic differentiation
+- **I**dentification : estimation of the parameters of the PDE
 
-## Méthodes
-- Physics-Informed Neural Networks (PINN) en 3D
-- Refonte complète du code initial (migration TensorFlow, extension 2D→3D)
-- Application à la dynamique de biomasse d'arbres
+## Methodes
+- Physics-Informed Neural Networks (PINN) in 3D
+- Complete rewrite of the original code (migration TensorFlow, extension 2D→3D)
+- Application to the  dynamics of trees' biomass
 
 ## Stack
 Python - TensorFlow - GitLab institutionnel (public)
 
-## Dépôts
+## Repository
 [![GitLab](https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab)](https://gitlab.cirad.fr/amap/personal/emiliepeynaud/pydata2pde.git)
 [![Software Heritage](https://img.shields.io/badge/Software%20Heritage-4F4F4F?style=flat&logo=softwareheritage&logoColor=white)](https://archive.softwareheritage.org/swh:1:dir:fd7172e67af912dddd7f2f50ccb6f42f7adb913f)
 
@@ -34,5 +33,6 @@ Peynaud E. et al. 2025. A workflow to discover partial differential equations
 from data. MethodsX, vol. 15.
 [https://doi.org/10.1016/j.mex.2025.103560](https://doi.org/10.1016/j.mex.2025.103560)
 
+
 ---
-[← Retour au portfolio](index.qmd)
+[← Back to portfolio](index.qmd)

@@ -38,6 +38,7 @@ Mes méthodes sont transversales. Mes applications ont couvert :
 | [pinn-pytorch](pinn-pytorch.qmd) | PINN pédagogique 1D | Python + PyTorch | 🔧 WIP |
 
 
-
+<!--
 ---
 [← Retour à l'accueil](../index.qmd)
+-->

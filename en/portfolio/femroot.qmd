@@ -2,20 +2,20 @@
 title: "FemRoot"
 ---
 
-# Simulation numérique de dynamiques racinaires
+# Numerical simulation of the dynamics of root systems
 
-## Contexte
-Développement autonome au CIRAD (UMR AMAP). Modélisation de la croissance racinaire en 2D par résolution d'une équation d'advection-réaction-diffusion temporelle.
+## Context
+Development done at CIRAD (UMR AMAP). Modelling of root growth dynamics in 2D by solving a time-dependant advection-reaction-diffusion equation. 
 
-## Méthodes
-- Splitting d'opérateur
-- Éléments finis de type Galerkin-Discontinu
-- Estimation de paramètres par algorithme de Levenberg-Marquardt
-- Inversion de la matrice EF via la librairie MUMPS
-- Étude numérique de la positivité de la solution
+## Methods
+- Operator splitting 
+- Discontinuous finite elements 
+- Estimation of parameters with the Levenberg-Marquardt's algorithm 
+- Inversion of the finite element matrix with the library MUMPS
+- Numerical study of the positivity preserving of the schema
 
 ## Stack
-Fortran 90 - MUMPS - Make - ParaView (sorties VTK) - GitLab institutionnel
+Fortran 90 - MUMPS - Make - ParaView (sorties VTK) - Institutional GitLab
 
 
 ## Publication

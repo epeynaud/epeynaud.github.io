@@ -72,7 +72,7 @@ L'ensemble de mon travail s'appuie sur un socle méthodologique commun en lien a
 
 ----------------------
 -->
-
+<!--
 **Compétences**
 
 Mon activité s'appuie sur un socle méthodologique en modélisation mathématique et calcul scientifique, appliqué à des problématiques de dynamiques de végétation. Ce socle mobilise quatre grandes familles de compétences, transposables à d'autres domaines impliquant des systèmes dynamiques spatio-temporels complexes.
@@ -107,3 +107,4 @@ Ces compétences ont été mobilisées notamment sur des applications à la dyna
 - Développement et génie logiciel, conception d'architecture de code : fortran 90, julia python. Maintenance de code en C++. Gestion de version GitLab, GitHub. 
 
 - Calcul haute  performance (HPC) : architecture de calcul intensif, gestionnaire de tâche (slurm), environnement linux, cluster
+-->

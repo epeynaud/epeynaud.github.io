@@ -2,25 +2,23 @@
 title: TreeGrass2D
 ---
 
-# Dynamiques de biomasse en savane africaine soumise à des feux périodiques :fire:
+# Dynamics of biomass in fire prone savanna in central Africa :fire:
 
-## Contexte
-Développement autonome au CIRAD (UMR AMAP). Simulation des interactions
-entre biomasse ligneuse et herbacée en contexte de savanes soumises à des
-feux périodiques, en 2D.
+## Context
+Development at CIRAD (UMR AMAP). Numerical simulation of the interactions between woody and herbaceous biomass in fire prone savanna in 2D
 
-## Méthodes
-- Système d'EDP parabolique semi-linéaire
-- Éléments finis continus avec lumping de la matrice de masse
-- Linéarisation non standard du second membre (garantie de positivité)
-- Moulinettes de traitement de données satellites (Python, Julia)
+## Methods
+- System of semi-linear parabolic PDEs
+- Continuous finite elements with the mass lumping method
+- Non-standard linearisation of the RHS (for positivity preserving purpose)
+- Satellite data processing script (Python, Julia)
 
 ## Stack
-Fortran 90 - MUMPS - Make - ParaView - Python - Julia - GitLab institutionnel
+Fortran 90 - MUMPS - Make - ParaView - Python - Julia - Institutional GitLab
 
 ## Statut
-🔧 Article sur l'étude du schéma numérique en cours de rédaction.
-Dépôt rendu public à la publication.
+🔧 Writing of the article on the numerical schema study is in progress. 
+Code repository to be released upon publication of the article. 
 
 ---
-[← Retour au portfolio](index.qmd)
+[← Back to portfolio](index.qmd)
