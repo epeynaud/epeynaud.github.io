@@ -1,0 +1,136 @@
+---
+title: "Faire un site quarto bilingue"
+date: 2026-11-23
+categories: [quarto, outils]
+---
+
+`Quarto` (version 1.9) offre l'option `profil` qui permet de générer plusieurs version d'un document avec des configurations différentes. Pour faire un site en version anglaise et française, cette solution ne me convenais pas car j'avais du mal à gérer les changements de langue de la barre de navigation (par exemple : barre des menus dans une langue et contenu de la page dans l'autre). J'ai donc choisi de faire une page `html` brute et épurée qui donne un aiguillage vers deux sites `quarto` indépendants, l'un en anglais et l'autre en français.  
+
+J'ai mis en place la configuration suivante : 
+
+- Un fichier `index.html` tout simple qui permet de choisir le site en anglais ou en français.
+- Un quarto site en anglais.
+- Un quarto site en français. 
+
+Les deux quartos sites anglais et français sont dans des répertoires indépendants. On passe d'un site à l'autre en utilisant les liens vers les fichiers `html` générés par `quarto render`.
+
+Pour l'intégration dans `github`, il faut un fichier d'intégration (`deploy.yml`) qui reproduit la "bonne recette de cuisine" via les GitHub Actions. 
+
+## La routine pour que ça marche en local :
+
+1. Générer les sites `quarto` dans leur répertoire respectif. J'ai défini les répertoires de sortie dans les fichiers `_quarto.yml` avec 
+`output-dir: _site-fr` et `output-dir: _site-en`, respectivement. 
+
+2. Pour la prévisualisation en local, on mime le déploiement dans *Github* avec les instructions suivantes exécutées dans un terminal :
+     
+    ```
+        mkdir _site
+        cp -r en/_site-en/ _site/
+        cp -r fr/_site-fr/ _site/
+        cp index.html _site/
+        cp style.css _site/
+    ```
+
+    De cette manière, on aura les bons liens vers les sous-sites dans les versions locales et déployées dans Github. 
+
+3. Pour visualiser le site web en local, il faut utiliser un serveur HTTP local, car en faisant simplement `firefox index.html̀`, on obtient des erreurs 404 quand on clique sur les liens vers les `index.html` de l'autre langue (pour changer de langue pendant la navigation). Pour contourner cela, dans un terminal, se placer dans le répertoire du site "méta" (`_site`) et faire les commandes suivantes dans un terminal : 
+
+    ```
+        cd repertoire\ou\se\trouve\le\fichier\index.html
+        python3 -m http.server 8000
+        firefox http://localhost:8000/
+    ```
+
+J'ai regroupé les étapes 1 et 2 dans un script `deploy-local.sh` et l'étape 3 est faite dans `serve-local.sh`. 
+
+:triangular_flag_on_post: Pour que les liens fonctionnent pendant la preview lancer `firefox` sur le fichier `index.html` qui se trouve dans le répertoire du site déployé dans `_site` (et non sur celui versionné dans le dépôt).
+
+## La routine pour intégrer tout cela dans *Github* avec des GitHub Actions
+
+1. Création du workflow dans le fichier de déploiement, puis `commit` et `push` sur le dépôt. 
+   
+   ```
+   mkdir -p .github/workflows
+   emacs .github/workflows/deploy.yml
+   ```
+   
+   Décrire les actions à faire dans le fichier `deploy.yml` (voir l'exemple ci-après). Puis l'envoyer sur le dépôt distant : 
+   
+   ```
+   git add .github/workflows/deploy.yml
+   git commit -m "Add GitHub Actions deployment workflow"
+   git push origin main
+   ```
+
+2. Les **GitHub Pages** du dépôt : sur la page web du dépôt aller dans *Settings* > *Pages*. Dans **Build and deployment** sélectionner `GitHub Actions`. 
+
+3. A chaque nouveau `push`, les actions vont se lancer. Voir le résultats des actions et les log dans l'onglet **Action**. 
+
+4. Le site sera visible à l'adresse https://USERNAME.github.io/YOURREPO/ ou à l'adresse https://USERNAME.github.io/ si le dépôt s'appelle `USERNAME.github.io`.
+
+
+## Exemple de fichier `deploy.yml`
+
+ ```
+name: Deploy website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render site-fr
+        working-directory: fr
+        run: quarto render
+
+      - name: Render site-en
+        working-directory: en
+        run: quarto render
+        
+      - name: Prepare website
+        run: |
+          mkdir website
+          cp index.html website/
+          cp style.css website/
+          cp -r en/_site-en website/en
+          cp -r fr/_site-fr website/fr
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './website'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+   ```
