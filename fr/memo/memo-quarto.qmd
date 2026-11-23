@@ -10,7 +10,7 @@ Un projet site Quarto repose sur `_quarto.yml` (config) et des fichiers `.qmd` (
 
 ## Contenu des fichiers `.qmd` 
 
-Les fichiers `.qmd` (Quarto Markdown) comporte une entête en YAML
+Les fichiers `.qmd` (Quarto Markdown) comportent une entête en YAML
 
 ```
 ---
