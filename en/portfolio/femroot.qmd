@@ -24,4 +24,4 @@ for advection-reaction-diffusion problem: application to plant root growth.
 Biomath, 7(2). [https://doi.org/10.11145/j.biomath.2018.12.037](https://doi.org/10.11145/j.biomath.2018.12.037)
 
 ---
-[← Retour au portfolio](index.qmd)
+[← Back to portfolio](index.qmd)
