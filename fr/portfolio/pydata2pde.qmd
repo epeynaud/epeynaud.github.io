@@ -11,8 +11,8 @@ de données représentant des dynamiques temporelles.
 
 ## Workflow CEDI
 - **C**ollection : données synthétiques de biomasse arborée en 3D
-- **E**xtrapolation : interpolation spatiotemporelle
-- **D**ifferentiation : calcul des dérivées partielles
+- **E**xtrapolation : interpolation spatiotemporelle (surrogate model)
+- **D**ifferentiation : calcul des dérivées partielles par différentiation automatique
 - **I**dentification : estimation des paramètres de l'EDP
 
 ## Méthodes
