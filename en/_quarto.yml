@@ -22,7 +22,7 @@ website:
       - href: publications/index.qmd
         text: Publications
       - href: ./../fr/memo/index.html
-        text: Mémo
+        text: Notes (in French)
     right:
       - href: ../fr
         text: 🇫🇷 Français
