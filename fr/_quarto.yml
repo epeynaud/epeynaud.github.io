@@ -2,9 +2,12 @@ project:
   type: website
   output-dir: _site-fr
 
+from: markdown+emoji
+
 website:
   back-to-top-navigation: true  # Back to top button at the bottom of the page
   title: "Emilie Peynaud"
+  #favicon: favicon.png
   navbar:
     #title: "Emilie"
     logo-href: "../"
