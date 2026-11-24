@@ -64,7 +64,7 @@ J'ai regroupé les étapes 1 et 2 dans un script `deploy-local.sh` et l'étape 3
 
 2. Les **GitHub Pages** du dépôt : sur la page web du dépôt aller dans *Settings* > *Pages*. Dans **Build and deployment** sélectionner `GitHub Actions`. 
 
-3. A chaque nouveau `push`, les actions vont se lancer. Voir le résultats des actions et les log dans l'onglet **Action**. 
+3. A chaque nouveau `push`, les actions vont se lancer. Voir le résultat des actions et les log dans l'onglet **Action**. 
 
 4. Le site sera visible à l'adresse https://USERNAME.github.io/YOURREPO/ ou à l'adresse https://USERNAME.github.io/ si le dépôt s'appelle `USERNAME.github.io`.
 
